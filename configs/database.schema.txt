@@ -1,0 +1,1 @@
+--these are the tables on the xyz notifications database
