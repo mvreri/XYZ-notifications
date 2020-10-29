@@ -71,6 +71,15 @@
   (def db-subprotocol (config-value :db-subprotocol))
   (def db-subname (config-value :db-subname))
 
+  ;:attempts-threshold 10, :initial-delay-ms 20000, :delay-exponent 0
+  (def attempts-threshold (config-value :attempts-threshold))
+  (def initial-delay-ms (config-value :initial-delay-ms))
+  (def delay-exponent (config-value :delay-exponent))
+
+  (def COMPOJURE_THROTTLE_TTL (config-value :COMPOJURE_THROTTLE_TTL))
+  (def COMPOJURE_THROTTLE_TOKENS (config-value :COMPOJURE_THROTTLE_TOKENS))
+  (def COMPOJURE_THROTTLE_RESPONSE_CODE (config-value :COMPOJURE_THROTTLE_RESPONSE_CODE))
+
 
 
   (println "Host -> "db-host)

@@ -1,5 +1,5 @@
 (defproject xyznotifications "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "An application to tackle hard and soft throttling for api requests across a distributed system"
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
@@ -19,8 +19,10 @@
                  [tupelo "0.9.54"]
                  [org.clojars.tnoda/simple-crypto "0.1.0"]
                  [lib-noir "0.9.9"]
-
-                 [metabase/throttle "1.0.2"]]
+                 [metabase/throttle "1.0.2"]
+                 [throttler "1.0.0"]
+                 [ring-ratelimit "0.2.2"]
+                 [compojure-throttle "0.1.7"]]
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler xyznotifications.handler/app}
   :profiles
